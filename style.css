@@ -1,0 +1,236 @@
+:root {
+  --just-orange: #ec9026;
+  --deep-orange: #d17907;
+  --just-yellow: #f3d62e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+  font-family: "Lato", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3 {
+  padding: 0.5rem, 0;
+}
+
+/* Utility Classes */
+.btn {
+  display: inline-block;
+  border-radius: 3px;
+  padding: 0.6rem 1.2rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn:hover {
+  font-weight: bold;
+}
+
+.btn-light {
+  background-color: var(--deep-orange);
+  color: white;
+}
+
+.btn-dark {
+  background-color: var(--just-orange);
+  color: black;
+}
+
+.btn-1 {
+  display: inline-block;
+  border-radius: 3px;
+  padding: 0.8rem 2.5rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn-1:hover {
+  background-color: black;
+  color: var(--just-orange);
+}
+
+.my-1 {
+  color: var(--deep-orange);
+}
+.my-2 {
+  font-size: 3.2rem;
+}
+.my-3 {
+  color: var(--just-yellow);
+}
+
+/* Navbar */
+#header {
+  background-color: var(--just-yellow);
+  position: sticky;
+  top: 0;
+  z-index: 4;
+}
+
+.container {
+  max-width: 1350px;
+  height: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem 0;
+}
+
+.navbar img {
+  width: 50px;
+  margin: 5px 0;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+}
+
+.navbar ul li {
+  margin-left: 2.5rem;
+  position: relative;
+  padding: 0.4rem 0;
+}
+
+.navbar ul li a {
+  display: block;
+  transition: all 0.4s ease-in-out;
+}
+
+.navbar ul li a:hover {
+  border-bottom: solid 2px var(--deep-orange);
+}
+
+.navbar ul li ul {
+  display: none;
+}
+
+.navbar ul li:hover ul {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 170px;
+  border-radius: 5px;
+  background-color: white;
+  z-index: 1;
+}
+
+.navbar ul li ul li {
+  color: black;
+}
+
+.navbar ul li ul li a {
+  display: block;
+  padding: 0.4rem 0;
+  border-bottom: solid 1px #f4f4f4;
+}
+
+/* Header Content */
+#header-content {
+  height: 90vh;
+  background-color: var(--just-yellow);
+  position: relative;
+}
+
+#header-content:before {
+  content: "";
+  background: url(img/brett-zeck-eyfMgGvo9PA-unsplash.jpg) no-repeat center
+    center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  height: 100%;
+  width: 55%;
+}
+
+.header-content h1 {
+  font-size: 4.2rem;
+  font-weight: 900;
+  line-height: 4.4rem;
+  margin-bottom: 1rem;
+  z-index: 2;
+}
+
+.header-content h3 {
+  color: white;
+  font-weight: 300;
+  font-size: 1.3rem;
+  margin-bottom: 1.8rem;
+  z-index: 2;
+}
+
+/* Showcase Section */
+.showcase-one .showcase-text {
+  width: 60vw;
+  text-align: center;
+  margin: 3rem auto;
+}
+
+.showcase-one .showcase-text h3 {
+  color: var(--deep-orange);
+  margin-bottom: 0.8rem;
+}
+
+.showcase-one .showcase-text h2 {
+  margin-bottom: 0.6rem;
+}
+
+.showcase-one .showcase-text p {
+  margin-bottom: 2rem;
+}
+
+.showcase-one .showcase-one-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-content: center;
+  grid-gap: 1.7rem;
+}
+
+.showcase-one .showcase-one-grid > div {
+  text-align: center;
+  box-shadow: 3px 8px 5px #f3f3f3, -3px 8px 5px #f3f3f3;
+  margin: 2rem 0;
+  padding: 0.6rem 0.9rem 3.5rem 0.9rem;
+}
+
+.showcase-one .showcase-one-grid > div > h2 {
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+.showcase-one .showcase-one-grid img {
+  width: 70px;
+  border-radius: 50%;
+  box-shadow: 3px 8px 5px #c5c5c5;
+}
